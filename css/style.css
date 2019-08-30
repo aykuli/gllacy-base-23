@@ -4,7 +4,7 @@
 
 .temp-catalog	{
 	width: 100%;
-	height: 170px;
+	height: 167px;
 	background-color: rgba(255, 0, 0, .2);
 }
 
@@ -13,7 +13,7 @@
 body {
 	position: relative;
 
-	font-family: "Roboto", "Arial", sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
@@ -47,13 +47,10 @@ a {
 
 .container {
 	position: relative;
-
 	width: 1146px;
 	margin: auto;
 	padding-left: 27px;
 	padding-right: 27px;
-
-	outline: 1px solid red;
 }
 
 .text-bold {
@@ -176,10 +173,7 @@ a {
 	left: -8px;
 	
 	margin: 0;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-left: 6px;
-	padding-right: 9px;
+	padding: 0;
 
 	background-color: rgb(247, 246, 243);
 	border-radius: 5px;
@@ -189,6 +183,11 @@ a {
 	z-index: 2;
 
 	display: none;
+}
+
+.dropdown-menu-item {
+	padding: 0;
+	margin: 0;
 }
 
 .dropdown-menu-item:first-child {
@@ -213,7 +212,7 @@ a {
 }
 
 .dropdown-menu-item:last-child {
-	padding-bottom: 12px;
+	padding-bottom: 5px;
 }
 
 .dropdown-menu-item a {
@@ -289,6 +288,10 @@ a {
 	padding: 7px;	
 }
 
+.user-navigation-link:hover g {
+	fill: #000;
+}
+
 .login-link,
 .cart-empty-link,
 .cart-full-link {
@@ -302,6 +305,11 @@ a {
 
 .cart-empty-link {
 	padding-right: 34px;
+}
+
+.cart-full-link {
+	color: rgb(50, 50, 50);
+	background-color: rgb(247, 247, 244);
 }
 
 .cart-empty-link span,
@@ -394,7 +402,6 @@ a {
 	padding-top: 212px;
 	margin-bottom: 43px;
 
-	z-index: -1;
 }
 
 .slider-bg {
@@ -403,26 +410,31 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: -2;
 }
 
 .bg-1 {
-	background-color: rgb(132, 157, 143);	
+	background-color: rgb(132, 157, 143);
+	z-index: -3;
 }
 
 .bg-2 {
-	background-color: rgb(137, 150, 166);	
+	background-color: rgb(137, 150, 166);
+	z-index: -3;
 }
 
 .bg-3 {
-	background-color: rgb(157, 139, 132);	
+	background-color: rgb(157, 139, 132);
+	z-index: -3;
 }
 
-.slider-1 {
+.sliders {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: -1;
+}
 
+.slider-1 {
 	width: 1045px;
 	height: 881px;
 
@@ -430,14 +442,9 @@ a {
 	background-image: url(../img/slider-1.png);
 	background-position: top 0 left 78px;
 	background-repeat: no-repeat;
-	z-index: -3;
 }
 
 .slider-2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-
 	width: 1065px;
 	height: 859px;
 
@@ -445,22 +452,15 @@ a {
 	background-image: url(../img/slider-2.png);
 	background-position: top 0 left 68px;
 	background-repeat: no-repeat;
-	z-index: -3;
 }
 
 .slider-3 {
-	position: absolute;
-	top: 0;
-	left: 0;
-
 	width: 1079px;
 	height: 854px;
-
 
 	background-image: url(../img/slider-3.png);
 	background-position: top 0 left 61px;
 	background-repeat: no-repeat;
-	z-index: -3;
 }
 
 .slider-list {
@@ -861,7 +861,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 0;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 	margin-left: 0;
 	padding: 0;
 
@@ -880,7 +880,7 @@ a {
 	flex-direction: column;
 	width: 267px;
 	margin: 0;
-	padding-top: 5px;
+	padding-top: 7px;
 	padding-bottom: 20px;
 	padding-right: 13px;
 	padding-left: 13px;
@@ -911,8 +911,7 @@ a {
 }
 
 .product-img {
-	position: relative;
-	z-index: -2;
+	z-index: -3;
 }
 
 .product:hover .product-img {
@@ -949,7 +948,7 @@ a {
 }
 
 .product-price {
-	margin-top: -65px;
+	margin-top: -55px;
 	margin-bottom: 73px;
 
 	font-size: 45px;
@@ -964,7 +963,7 @@ a {
 
 .btn-product {
 	position: absolute;
-	top: 335px;
+	top: 340px;
 	left: 48px;
 
 	padding-right: 15px;
@@ -989,10 +988,19 @@ a {
 }
 
 .pagination-item {
+	display: inline-block;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-right: 9px;
+	padding-left: 8px;
+	margin-right: 0px;
+
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
+
+	border-radius: 50%
 }
 
 .pagination-item:hover,
@@ -1013,6 +1021,19 @@ a {
 	color: rgb(50, 50, 50);
 
 	background-color: rgb(255, 255, 255);
+}
+
+.pagination-item-prev {
+	margin-right: 10px;
+	opacity: .2;
+}
+
+.pagination-item-prev svg {
+	transform: rotate(180deg);
+}
+
+.pagination-item-next {
+	margin-left: 10px;
 }
 /*END of Pagination*/
 
@@ -1145,7 +1166,7 @@ a {
 }
 
 .social-link:active .social-icon {
-	fill: rgb(233, 233, 233);
+	fill: rgb(233, 233, 0);
 	opacity: 1;
 }
 
