@@ -88,8 +88,7 @@ a {
 
 .btn:hover,
 .btn:focus {
-	background: linear-gradient(180deg, rgb(242, 104, 67), rgb(231, 74, 53)), rgba(255, 255, 255, .2);
-	background-blend-mode: screen;
+	background: linear-gradient(0deg, rgb(236, 111, 94), rgb(245, 134, 105));
 	cursor: pointer;
 	outline: none;
 }
@@ -440,7 +439,7 @@ a {
 
 
 	background-image: url(../img/slider-1.png);
-	background-position: top 0 left 78px;
+	background-position: top left 78px;
 	background-repeat: no-repeat;
 }
 
@@ -450,7 +449,7 @@ a {
 
 
 	background-image: url(../img/slider-2.png);
-	background-position: top 0 left 68px;
+	background-position: top left 68px;
 	background-repeat: no-repeat;
 }
 
@@ -459,7 +458,7 @@ a {
 	height: 854px;
 
 	background-image: url(../img/slider-3.png);
-	background-position: top 0 left 61px;
+	background-position: top left 61px;
 	background-repeat: no-repeat;
 }
 
@@ -550,14 +549,14 @@ a {
 .offers-raspberry {
 	background-color: rgba(161, 67, 94, .5);
 	background-image: url(../img/bg-raspberry.jpg);
-	background-position: top 0 right 0;
+	background-position: top right;
 	background-repeat: no-repeat;
 }
 
 .offers-choco {
 	background-image: url(../img/bg-choco.jpg);
 	background-color: rgba(118, 70, 47, .5);
-	background-position: top 0 right 0;
+	background-position: top right;
 	background-repeat: no-repeat;
 }
 
@@ -594,7 +593,7 @@ a {
 
 	background-color: rgb(236, 222, 195);
 	background-image: url(../img/bg-wafer.jpg);
-	background-position: top 0 right 0;
+	background-position: top right;
 	background-repeat: repeat;
 	border-radius: 15px;
 }
@@ -632,25 +631,25 @@ a {
 .feature-product {
 	background-image: url(../img/ice-cream.svg);
 	background-repeat: no-repeat;
-	background-position: top 9px left 0;
+	background-position: top 9px left;
 }
 
 .feature-eco {
 	background-image:	url(../img/eco.svg);
 	background-repeat: no-repeat;
-	background-position: top 9px left 0;	
+	background-position: top 9px left;	
 }
 
 .feature-farm {	
 	background-image: url(../img/cow.svg);
 	background-repeat: no-repeat;
-	background-position: top 9px left 0;
+	background-position: top 9px left;
 }
 
 .feature-thermo {
 	background-image: url(../img/thermometer.svg);
 	background-repeat: no-repeat;
-	background-position: top 9px left 0;	
+	background-position: top 9px left;	
 }
 /*END of Features in index.html*/
 /*Widjets*/
@@ -669,7 +668,7 @@ a {
 
 	background-color: rgb(255, 255, 255);
 	background-image: url(../img/bg-strawberry.png);
-	background-position: top 0 right 0;
+	background-position: top right;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
