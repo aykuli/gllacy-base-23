@@ -214,8 +214,9 @@ a {
 	padding-bottom: 5px;
 }
 
-.dropdown-menu-item a {
+.dropdown-link {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	padding-top: 8px;
 	padding-bottom: 8px;
@@ -225,6 +226,7 @@ a {
 
 	font-size: 14px;
 	line-height: 16px;
+	font-weight: 400;
 	color: rgb(50, 50, 50);
 }
 
@@ -576,7 +578,6 @@ a {
 }
 
 .btn-offer {
-	margin-top: 43px;
 	text-align: right;
 }
 /*END of Promo Section*/
@@ -712,7 +713,7 @@ a {
 
 	background-color: rgb(248, 247, 244);
 	background: url(../img/bg-post.svg);
-	background-position: 0 0;
+	background-position: top right;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
@@ -1062,8 +1063,8 @@ a {
 	left: 265px;
 	width: 250px;
 	height: 150px;
-	background-image: url(../img/pin.svg), url(../img/pin-shadow.png);
-	background-position: top 0 left 0, top 32px left 35px;
+	background-image: url(../img/pin-shadow.png);
+	background-position: top left;
 	background-repeat: no-repeat, no-repeat;
 	box-shadow: 
 }
@@ -1217,7 +1218,7 @@ a {
 
 .footer-menu-item:first-child {
 	background-image: url(../img/heart.svg);
-	background-position: 8px 5px;
+	background-position: top 8px left 5px;
 	background-repeat: no-repeat;
 }
 
