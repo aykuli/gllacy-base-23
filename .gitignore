@@ -9,3 +9,14 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+*.code-workspace
+*.yml
+gulpfile.js
+build/
+buckup/
+img/gllacy-catalog.jpg
+img/gllacy-index-1200.jpg
+package-lock.json
+package.json
+
+
